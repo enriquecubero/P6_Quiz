@@ -1,0 +1,16 @@
+
+<h1>
+    Resultado:
+</h1>
+
+<p>
+    La respuesta <strong> <%= answer %> </strong> es <%= result ? 'Right' : 'Wrong' %>.
+</p>
+
+<p>
+    <% if (!result) { %>
+       <a href="/quizzes/<%= quiz.id %>/play?answer=<%= answer %>"> Intentalo de nuevo </a>
+    <% } %>
+</p>
+
+<a href="/goback"><button>Go back</button></a>
